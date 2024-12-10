@@ -1,0 +1,161 @@
+/* Resetando estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.hero {
+    background-color: #28a745;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.produto {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.produto p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.produto .preco {
+    color: #28a745;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.produto button:hover {
+    background-color: #218838;
+}
+
+.avaliacoes {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.avaliacoes h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.comentario {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comentario .cliente {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.estrela {
+    color: #ffcc00;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+/* Definindo o estilo para as imagens da galeria de produtos */
+.produto img {
+    width: 200px; /* Define a largura desejada para todas as imagens */
+    height: 300px; /* Define a altura desejada para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    border-radius: 8px; /* Opção para arredondar as bordas da imagem */
+}
+/* Definindo o estilo para as imagens da galeria de produtos */
+.produto img {
+    width: 300px; /* Aumenta a largura para 300px */
+    height: 400px; /* Aumenta a altura para 400px */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    border-radius: 8px; /* Arredonda as bordas da imagem */
+}

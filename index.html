@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MA Store - Camisas de Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>MA Store</h1>
+            <p>Camisas de time com estilo!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Avaliações</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" class="carrinho">Carrinho <span id="item-count">(0)</span></a></li> <!-- Novo link do carrinho -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section class="hero">
+        <h2>Confira nossas camisetas de time</h2>
+        <p>Escolha a sua preferida e mostre seu estilo!</p>
+    </section>
+
+    <!-- Galeria de Produtos -->
+    <section class="produtos">
+        <div class="produto">
+            <img src="imgagens/PSG.jpeg" alt="Camiseta Flamengo">
+            <p>Camiseta Psg</p>
+            <p class="preco">R$ 129,90</p>
+            <button class="adicionar-carrinho">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="imgagens/napoli.jpg" alt="Camiseta Palmeiras">
+            <p>Camiseta napoli</p>
+            <p class="preco">R$ 119,90</p>
+            <button class="adicionar-carrinho">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="imgagens/11.png" alt="Camiseta São Paulo">
+            <p>Camiseta all nassr</p>
+            <p class="preco">R$ 134,90</p>
+            <button class="adicionar-carrinho">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="imgagens/borussia.jpg" alt="Camiseta Corinthians">
+            <p>Camiseta borussia</p>
+            <p class="preco">R$ 139,90</p>
+            <button class="adicionar-carrinho">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="imgagens/Al hilal.jpeg" alt="Camiseta Atlético Mineiro">
+            <p>Camiseta all hilal</p>
+            <p class="preco">R$ 125,90</p>
+            <button class="adicionar-carrinho">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="imgagens/14.png" alt="Camiseta Santos">
+            <p>Camiseta barcelona</p>
+            <p class="preco">R$ 129,90</p>
+            <button class="adicionar-carrinho">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Seção de Avaliações -->
+    <section class="avaliacoes">
+        <h2>Avaliações dos Clientes</h2>
+        <div class="comentario">
+            <p class="cliente">João Silva</p>
+            <div class="estrela">
+                ★★★★☆
+            </div>
+            <p>"A camiseta do Flamengo é de excelente qualidade, muito confortável. Super recomendo!"</p>
+        </div>
+        <div class="comentario">
+            <p class="cliente">Maria Oliveira</p>
+            <div class="estrela">
+                ★★★★★
+            </div>
+            <p>"Adorei a camiseta do Palmeiras! O tecido é ótimo e o ajuste é perfeito. Com certeza voltarei a comprar."</p>
+        </div>
+        <div class="comentario">
+            <p class="cliente">Carlos Santos</p>
+            <div class="estrela">
+                ★★★☆☆
+            </div>
+            <p>"Gostei da camiseta do São Paulo, mas o tamanho ficou um pouco grande para mim."</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 MA Store - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para adicionar itens ao carrinho
+        let itemCount = 0;
+        const addToCartButtons = document.querySelectorAll('.adicionar-carrinho');
+        const itemCountDisplay = document.getElementById('item-count');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                itemCount++;
+                itemCountDisplay.textContent = `(${itemCount})`;
+            });
+        });
+    </script>
+
+</body>
+</html>
